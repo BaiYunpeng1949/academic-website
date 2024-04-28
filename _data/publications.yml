@@ -3,7 +3,13 @@ featured:
   name: 'Heads-Up Multitasker: Simulating Attention Switching On Optical Head-Mounted Displays',
   venue: 'CHI24',
   authors: 'Bai Yunpeng, Aleksi Ikkala, Antti Oulasvirta, Shengdong Zhao, Lucia J. Wang, Pengzhi Yang, Peisen Xu',
-  url: '/publications/hum/paper.pdf',
+  key_word: 'RL Modeling',
+  pdf: 'PDF',
+  pdf_url: '/publications/hum/paper.pdf',
+  video: 'Video',
+  video_url: 'https://www.youtube.com/watch?v=uT3a38G3BNU',
+  code: 'Code',
+  code_url: 'https://github.com/Synteraction-Lab/heads-up-multitasker',
   img: '/publications/hum/img.jpg',
 }
 
