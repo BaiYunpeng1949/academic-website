@@ -9,7 +9,7 @@ featured:
   video: 'Video',
   video_url: 'https://www.youtube.com/watch?v=uT3a38G3BNU',
   code: 'Code',
-  code_url: 'https://github.com/Synteraction-Lab/heads-up-multitasker',
+  github: 'https://github.com/Synteraction-Lab/heads-up-multitasker',
   img: '/publications/hum/img.jpg',
 }
 
