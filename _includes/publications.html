@@ -1,47 +1,65 @@
-.button-container {
-  text-align: right; /* Aligns the buttons to the right */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications</title>
+<style>
+  .button-container {
+    text-align: right; /* Aligns the buttons to the right */
+  }
 
-.btn {
-  display: inline-block; /* Places buttons in a line */
-  margin-right: 5px; /* Adds space between buttons */
-  /* Add other styles such as padding, background color, etc. */
-}
+  .btn {
+    display: inline-block; /* Places buttons in a line */
+    margin-right: 5px; /* Adds space between buttons */
+    /* Add other styles such as padding, background color, etc. */
+  }
 
+  /* Additional styles */
+  .publication-content {
+    margin-bottom: 20px; /* Spacing between each publication block */
+  }
+  
+  /* Override Bootstrap's column padding for alignment */
+  .row .col-md-12 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+</style>
+</head>
+<body>
 
 <div class="container">
   <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
   <div class="row g-5 mb-5 align-items-center">
     <div class="col-md-4">
       <!-- Image container -->
-      {% if page.title == "Home" %}
-        {% for item in site.data.publications.featured %}
-          <img src="{{ item.img }}" alt="Publication Image" class="img-fluid">
-        {% endfor %}
-      {% endif %}
+      <!-- Dynamic image loading logic -->
     </div>
     <div class="col-md-8">
       <!-- Publication details -->
-<!--       {% if page.title == "Home" %} -->
-      {% for item in site.data.publications.featured %}
-        <p class="fw-bold">{{ item.name }}</p>
-        <p>{{ item.authors }}</p>
+      <!-- Example static content, replace with your dynamic logic -->
+      <div class="publication-content">
+        <p class="fw-bold">Publication Title</p>
+        <p>Author names</p>
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-12">
+            <p>Conference Name - Year</p>
+            <p>Research Area</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <p >{{ item.venue }}</p>
-          <p >{{ item.key_word }}</p>
-          <a href="{{ item.pdf_url }}" class="btn">{{ item.pdf }}</a>
-          <a href="{{ item.video_url }}" class="btn">{{ item.video }}</a>
-          <a href="{{ item.github }}" class="btn">{{ item.code }}</a>
+        <div class="row">
+          <div class="col-md-12 button-container">
+            <a href="#" class="btn">PDF</a>
+            <a href="#" class="btn">Video</a>
+            <a href="#" class="btn">Code</a>
+          </div>
         </div>
-      {% endfor %}
-<!--       {% else %}
-        {% for item in site.data.publications.index %}
-          <p><a href="{{ item.url }}" class="text-decoration-none">{{ item.name }}</a></p>
-        {% endfor %} -->
-<!--       {% endif %} -->
+      </div>
+      <!-- End of Example static content -->
     </div>
   </div>
 </div>
+
+</body>
+</html>
