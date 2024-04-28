@@ -1,7 +1,7 @@
 menu:
 #- {name: 'people', url: '/people'}
 - {name: 'Home', url: '/index'}
-- {name: 'Publications', url: '/publications'}
+# - {name: 'Publications', url: '/publications'}
 #- {name: 'courses', url: '/courses'}
 - {name: 'CV', url: '/cv'}
 - {name: 'Contact', url: '/contact'}
@@ -21,6 +21,7 @@ social:
 #- {icon: 'twitter', link: 'https://twitter.com/paululele'}
 #- {icon: 'instagram', link: 'https://instagram.com/paululele'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/%E4%BA%91%E9%B9%8F-%E7%99%BD-92aa27191/'}
+- {icon: 'google scholar', link: 'https://scholar.google.com/citations?user=rpliY_AAAAAJ&hl=en&oi=ao'}
 
 contacts:
 - {
