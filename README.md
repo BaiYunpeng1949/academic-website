@@ -20,6 +20,14 @@ If you like my work then please consider supporting me with [Ko-fi](https://ko-f
 
 ### Ruby Gem Method
 
+First need to install jekyll and bundler on the local machine. Bai Yunpeng is using a Windows PC.
+```ruby
+gem install jekyll bundler
+```
+
+Then gitclone this project to the local machine, redirect it to the project directory, and then execute the following 
+command to install the required dependencies.
+
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
