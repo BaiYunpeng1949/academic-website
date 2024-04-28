@@ -11,22 +11,28 @@
     </div>
     <div class="col-md-8">
       {% for item in site.data.publications.featured %}
-        <p class="fw-bold">{{ item.name }}</p>
-        <p>{{ item.authors }}</p>
+        <div class="publication-info">
+          <p class="fw-bold">{{ item.name }}</p>
+          <p>{{ item.authors }}</p>
+        </div>
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-12">
+            <p class="btn">{{ item.venue }}</p>
+          </div>
         </div>
-        <div class="col-md-2">
-          <p class="btn">{{ item.venue }}</p>
-        </div>
-        <div class="col-md-2">
-          <a href="{{ item.pdf_url }}" class="btn">{{ item.pdf }}</a>
-        </div>
-        <div class="col-md-2">
-          <a href="{{ item.video_url }}" class="btn">{{ item.video }}</a>
-        </div>
-        <div class="col-md-2">
-          <a href="{{ item.github }}" class="btn">{{ item.code }}</a>
+        <div class="row">
+          <div class="col-3">
+            <a href="{{ item.pdf_url }}" class="btn">{{ item.pdf }}</a>
+          </div>
+          <div class="col-3">
+            <a href="{{ item.video_url }}" class="btn">{{ item.video }}</a>
+          </div>
+          <div class="col-3">
+            <a href="{{ item.github }}" class="btn">{{ item.code }}</a>
+          </div>
+          <div class="col-3">
+            <!-- Possibly another button or content here -->
+          </div>
         </div>
       {% endfor %}
     </div>
