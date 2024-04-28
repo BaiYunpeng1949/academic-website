@@ -1,9 +1,10 @@
 menu:
-- {name: 'people', url: '/people'}
-- {name: 'publications', url: '/publications'}
-- {name: 'courses', url: '/courses'}
-- {name: 'cv', url: '/cv'}
-- {name: 'contact', url: '/contact'}
+#- {name: 'people', url: '/people'}
+- {name: 'Home', url: '/index'}
+- {name: 'Publications', url: '/publications'}
+#- {name: 'courses', url: '/courses'}
+- {name: 'CV', url: '/cv'}
+- {name: 'Contact', url: '/contact'}
 
 people:
 - {name: 'Primary Investigator', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/primary-investigator.jpg', url: 'primary-investigator'}
@@ -16,10 +17,13 @@ courses:
 - {name: 'Stellar Structures', url: 'stellar-structures'}
 
 social:
-- {icon: 'github', link: 'https://github.com/LeNPaul'}
-- {icon: 'twitter', link: 'https://twitter.com/paululele'}
-- {icon: 'instagram', link: 'https://instagram.com/paululele'}
-- {icon: 'linkedin', link: 'https://linkedin.com/in/lenpaul'}
+- {icon: 'github', link: 'https://github.com/BaiYunpeng1949'}
+#- {icon: 'twitter', link: 'https://twitter.com/paululele'}
+#- {icon: 'instagram', link: 'https://instagram.com/paululele'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/%E4%BA%91%E9%B9%8F-%E7%99%BD-92aa27191/'}
 
 contacts:
-- {name: 'Dr. Academia', title: 'Professor', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/contact.jpg'}
+- {
+  name: 'Bai Yunpeng (白云鹏)', title: 'PhD Student', department: 'Computer Science', institution: 'National University of Singapore', institution_address: '21 Lower Kent Ridge Rd, Singapore 119077', phone: '(+65) 8941-9601', email: 'bai_yunpeng99@u.nus.edu', office: 'Innovation 4.0 #5',
+  image: 'assets/img/contact.jpg',
+}
