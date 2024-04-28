@@ -1,5 +1,5 @@
-url: "https://BaiYunpeng1949.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: " " # the subpath of your site, e.g. /blog
-title: "Bai Yunpeng (白云鹏)" # the name of your site, e.g. ACME Corp.
-description: "Chinese, PhD Candidate at NUS"
+url: "https://baiyunpeng1949.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog, if none, keep it empty
+title: "Bai Yunpeng (白云鹏)" # the name of your site
+description: "Chinese, PhD Candidate at NUS" # a brief description of your site or your tagline
 theme: academic-jekyll-theme
