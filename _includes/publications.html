@@ -1,3 +1,14 @@
+.button-container {
+  text-align: right; /* Aligns the buttons to the right */
+}
+
+.btn {
+  display: inline-block; /* Places buttons in a line */
+  margin-right: 5px; /* Adds space between buttons */
+  /* Add other styles such as padding, background color, etc. */
+}
+
+
 <div class="container">
   <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
   <div class="row g-5 mb-5 align-items-center">
@@ -11,16 +22,26 @@
     </div>
     <div class="col-md-8">
       <!-- Publication details -->
-      {% if page.title == "Home" %}
-        {% for item in site.data.publications.featured %}
-          <p><a href="{{ item.url }}" class="fw-bold">{{ item.name }}</a>  ({{  item.venue }})</p>
-          <p>{{ item.authors }}</p>
-        {% endfor %}
-      {% else %}
+<!--       {% if page.title == "Home" %} -->
+      {% for item in site.data.publications.featured %}
+        <p class="fw-bold">{{ item.name }}</p>
+        <p>{{ item.authors }}</p>
+        <div class="row">
+          <div class="col-md-8">
+        </div>
+        <div class="col-md-4">
+          <p >{{ item.venue }}</p>
+          <p >{{ item.key_word }}</p>
+          <a href="{{ item.pdf_url }}" class="btn">{{ item.pdf }}</a>
+          <a href="{{ item.video_url }}" class="btn">{{ item.video }}</a>
+          <a href="{{ item.github }}" class="btn">{{ item.code }}</a>
+        </div>
+      {% endfor %}
+<!--       {% else %}
         {% for item in site.data.publications.index %}
           <p><a href="{{ item.url }}" class="text-decoration-none">{{ item.name }}</a></p>
-        {% endfor %}
-      {% endif %}
+        {% endfor %} -->
+<!--       {% endif %} -->
     </div>
   </div>
 </div>
