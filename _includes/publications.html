@@ -1,7 +1,7 @@
 <div class="container">
   <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
   <div class="row g-5 mb-5 align-items-center">
-    <div class="col-md-4">
+    <div class="col-md-5">
       <!-- Image container -->
       {% if page.title == "Home" %}
         {% for item in site.data.publications.featured %}
@@ -9,18 +9,26 @@
         {% endfor %}
       {% endif %}
     </div>
-    <div class="col-md-8">
+    <div class="col-md-10">
       {% for item in site.data.publications.featured %}
         <p class="fw-bold">{{ item.name }}</p>
         <p>{{ item.authors }}</p>
         <div class="row">
           <div class="col-md-10">
         </div>
-        <div class="col-md-5">
-          <p>{{ item.venue }}</p>
-          <p>{{ item.key_word }}</p>
+        <div class="col-md-2">
+          <p class="btn">{{ item.venue }}</p>
+        </div>
+        <div class="col-md-2">  
+          <p class="btn">{{ item.key_word }}</p>
+        </div>
+        <div class="col-md-2">
           <a href="{{ item.pdf_url }}" class="btn">{{ item.pdf }}</a>
+        </div>
+        <div class="col-md-2">
           <a href="{{ item.video_url }}" class="btn">{{ item.video }}</a>
+        </div>
+        <div class="col-md-2">
           <a href="{{ item.github }}" class="btn">{{ item.code }}</a>
         </div>
       {% endfor %}
