@@ -11,26 +11,16 @@
     </div>
     <div class="col-md-8">
       {% for item in site.data.publications.featured %}
-        <div class="publication-info">
+        <div class="publication-info mb-3">
           <p class="fw-bold">{{ item.name }}</p>
           <p>{{ item.authors }}</p>
         </div>
-        <div class="row">
-          <div class="col-1">
-            <p class="btn btn-success mb-1">{{ item.venue }}</p>
-          </div>
-          <div class="col-1">
-            <p class="btn btn-primary mb-1">{{ item.key_word }}</p>
-          </div>
-          <div class="col-1">
-            <a href="{{ item.pdf_url }}" class="btn btn-info mb-1"  type="link">{{ item.pdf }}</a>
-          </div>
-          <div class="col-1">
-            <a href="{{ item.video_url }}" class="btn btn-info mb-1" type="link">{{ item.video }}</a>
-          </div>
-          <div class="col-1">
-            <a href="{{ item.github }}" class="btn btn-info mb-1" type="link">{{ item.code }}</a>
-          </div>
+        <div class="d-flex flex-wrap gap-2"> <!-- Use flexbox and gap utility -->
+          <p class="btn btn-success mb-1">{{ item.venue }}</p>
+          <p class="btn btn-primary mb-1">{{ item.key_word }}</p>
+          <a href="{{ item.pdf_url }}" class="btn btn-info mb-1" role="button">{{ item.pdf }}</a>
+          <a href="{{ item.video_url }}" class="btn btn-info mb-1" role="button">{{ item.video }}</a>
+          <a href="{{ item.github }}" class="btn btn-info mb-1" role="button">{{ item.code }}</a>
         </div>
       {% endfor %}
     </div>
