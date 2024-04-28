@@ -2,4 +2,5 @@ url: "https://baiyunpeng1949.github.io" # the base hostname & protocol for your 
 baseurl: "" # the subpath of your site, e.g. /blog, if none, keep it empty
 title: "Bai Yunpeng (白云鹏)" # the name of your site
 description: "Chinese, PhD Candidate at NUS" # a brief description of your site or your tagline
-theme: academic-jekyll-theme
+# theme: academic-jekyll-theme
+remote_theme: academic-jekyll-theme
