@@ -16,22 +16,19 @@
           <p>{{ item.authors }}</p>
         </div>
         <div class="row">
-          <div class="col-12">
+          <div class="col-2">
             <p class="btn">{{ item.venue }}</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-3">
+          <div class="col-2">
             <a href="{{ item.pdf_url }}" class="btn">{{ item.pdf }}</a>
           </div>
-          <div class="col-3">
+          <div class="col-2">
             <a href="{{ item.video_url }}" class="btn">{{ item.video }}</a>
           </div>
-          <div class="col-3">
+          <div class="col-2">
             <a href="{{ item.github }}" class="btn">{{ item.code }}</a>
-          </div>
-          <div class="col-3">
-            <!-- Possibly another button or content here -->
           </div>
         </div>
       {% endfor %}
