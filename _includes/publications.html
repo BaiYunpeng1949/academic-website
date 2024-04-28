@@ -9,19 +9,16 @@
         {% endfor %}
       {% endif %}
     </div>
-    <div class="col-md-5">
+    <div class="col-md-8">
       {% for item in site.data.publications.featured %}
         <p class="fw-bold">{{ item.name }}</p>
         <p>{{ item.authors }}</p>
-<!--         <div class="row">
+        <div class="row">
           <div class="col-md-8">
-        </div> -->
+        </div>
         <div class="col-md-2">
           <p class="btn">{{ item.venue }}</p>
         </div>
-<!--         <div class="col-md-2">  
-          <p class="btn">{{ item.key_word }}</p>
-        </div> -->
         <div class="col-md-2">
           <a href="{{ item.pdf_url }}" class="btn">{{ item.pdf }}</a>
         </div>
