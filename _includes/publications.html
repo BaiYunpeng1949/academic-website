@@ -1,14 +1,26 @@
-<div class="row g-5 mb-5">
-  <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
-    {% if page.title == "Home" %}
-      {% for item in site.data.publications.featured %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
-      {% endfor %}
-    {% else %}
-      {% for item in site.data.publications.index %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
-      {% endfor %}
-    {% endif %}
+<div class="container">
+  <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
+  <div class="row g-5 mb-5 align-items-center">
+    <div class="col-md-4">
+      <!-- Image container -->
+      {% if page.title == "Home" %}
+        {% for item in site.data.publications.featured %}
+          <img src="{{ item.img }}" alt="Publication Image" class="img-fluid">
+        {% endfor %}
+      {% endif %}
+    </div>
+    <div class="col-md-8">
+      <!-- Publication details -->
+      {% if page.title == "Home" %}
+        {% for item in site.data.publications.featured %}
+          <p><a href="{{ item.url }}" class="fw-bold">{{ item.name }}</a>  ({{  item.venue }})</p>
+          <p>{{ item.authors }}</p>
+        {% endfor %}
+      {% else %}
+        {% for item in site.data.publications.index %}
+          <p><a href="{{ item.url }}" class="text-decoration-none">{{ item.name }}</a></p>
+        {% endfor %}
+      {% endif %}
+    </div>
   </div>
 </div>

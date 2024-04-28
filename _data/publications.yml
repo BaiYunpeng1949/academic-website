@@ -1,5 +1,11 @@
 featured:
-- {name: 'Heads-Up Multitasker: Simulating Attention Switching On Optical Head-Mounted Displays. Bai Yunpeng, Aleksi Ikkala, Antti Oulasvirta, Shengdong Zhao, Lucia J. Wang, Pengzhi Yang, Peisen Xu', url: '/publications/Heads-Up Multitasker.pdf'}
+- {
+  name: 'Heads-Up Multitasker: Simulating Attention Switching On Optical Head-Mounted Displays',
+  venue: 'CHI24',
+  authors: 'Bai Yunpeng, Aleksi Ikkala, Antti Oulasvirta, Shengdong Zhao, Lucia J. Wang, Pengzhi Yang, Peisen Xu',
+  url: '/publications/hum/paper.pdf',
+  img: '/publications/hum/img.jpg',
+}
 
 index:
-- {name: 'Heads-Up Multitasker: Simulating Attention Switching On Optical Head-Mounted Displays. Bai Yunpeng, Aleksi Ikkala, Antti Oulasvirta, Shengdong Zhao, Lucia J. Wang, Pengzhi Yang, Peisen Xu', url: '/publications/Heads-Up Multitasker.pdf'}
+- {name: 'Heads-Up Multitasker: Simulating Attention Switching On Optical Head-Mounted Displays. Bai Yunpeng, Aleksi Ikkala, Antti Oulasvirta, Shengdong Zhao, Lucia J. Wang, Pengzhi Yang, Peisen Xu', url: '/publications/paper.pdf'}
